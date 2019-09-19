@@ -26,3 +26,26 @@ To run NEMO, Follow instructions in the wiki:
 
 
 To do other stuff, do other stuff...
+
+
+
+File Hierarchy
+==============
+
+Each configuration directory should be laid out in the following manner, to
+facilitate configuration archival and sharing:
+
+<pre>
+BoBEAS
+|
+|__ ARCH
+|__ EXP_2016
+|__ EXP_Apr19
+|__ MY_SRC
+|__ SCRIPTS
+|__ STARTFILES
+|
+|__ .gitignore
+|__ README.md
+|__ cpp_file.fcm
+</pre>
