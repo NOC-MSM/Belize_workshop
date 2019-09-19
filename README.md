@@ -36,16 +36,36 @@ Each configuration directory should be laid out in the following manner, to
 facilitate configuration archival and sharing:
 
 <pre>
-BoBEAS
+Belize_workshop
 |
-|__ ARCH
-|__ EXP_2016
-|__ EXP_Apr19
-|__ MY_SRC
-|__ SCRIPTS
-|__ STARTFILES
+|__ BUILD_TOOLS
+|   |__ Docker
+|   |__ NEMOGCM
+|   |__ XIOS2
+|   |__ arch_NEMOGCM
+|   |__ arch_XIOS
+|   |__ cpp_BLZ.fcm
+|   |__ readme.txt
+|   |__ xios-2.0_r1242
 |
-|__ .gitignore
+|__ RUN_NEMO
+|   |__  EXP_demo
+|   |__ PARCELS_demo
+|
+|__ PYTHON_DIAGNOSTICS
 |__ README.md
-|__ cpp_file.fcm
+
+</pre>
+
+External files required
+
+<pre>
+runoff.nc
+initcd_votemper.nc
+initcd_vosaline.nc
+domain_cfg.nc
+coordinates.bdy.nc
+metdta
+bdydta
+
 </pre>
