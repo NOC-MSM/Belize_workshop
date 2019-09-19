@@ -1,3 +1,11 @@
+THE METHOD FOR BUILDER NEMO+XIOS IN DOCKER WAS MODIFIED FROM Pierre DERIAN
+https://github.com/pderian/NEMOGCM-Docker
+
+THIS IS THE README THEREIN SUPPLIED, THOUGH IN THIS DISTRIBUTION WE HAVE MADE
+SOME CHANGES TO THE FILES AND WORKFLOW.
+------------------------------------------------------------------------------
+
+
 README for NEMOGCM + Docker
 
 Pierre DERIAN - 2016-2017
@@ -10,10 +18,10 @@ www.pierrederian.net
 - Requirements: Docker and Subversion (to download NEMO source files)
 
 With this framework, the source files are kept on the host machine.
-In particular, they can be edited here using the usual tools (IDE, etc.). 
+In particular, they can be edited here using the usual tools (IDE, etc.).
 The input and output simulation files are also synchronized between the host
 and the container.
-The container is only used to (i) compile and (ii) run the NEMO engine. 
+The container is only used to (i) compile and (ii) run the NEMO engine.
 
 Tested successfully on Mac OS X >= 10.11.5
 with Docker version >= 1.12.0-rc2, build 906eacd, experimental
@@ -32,7 +40,7 @@ It contains:
     - two subdirectories "arch_XIOS" and "arch_NEMOGCM" with architecture files
         for XIOS and NEMOGCM compilation;
     - a "Docker" subdirectory with a Dockerfile that builds the
-        compilation/execution container. 
+        compilation/execution container.
 
 ----------------
 1. Source setup on the host
@@ -67,8 +75,8 @@ cd Docker; docker build -t nemo/compiler .
 ----------------
 3. Start an interactive container sharing the source files as a Volume.
 This way the host SRC will be available from within the container as /SRC.
-/!\ Note: /host/path/to/SRC must be the _absolute_ path to the host SRC directory 
-(at least on Mac OS X). 
+/!\ Note: /host/path/to/SRC must be the _absolute_ path to the host SRC directory
+(at least on Mac OS X).
 
 docker run -v /host/path/to/SRC:/SRC -t -i nemo/compiler /bin/bash
 
@@ -90,7 +98,7 @@ Here is an example with the GYRE (and xios 1.0).
 
 cd /SRC/NEMOGCM/CONFIG
 # to compile
-./makenemo -v 3 –m DEBIAN –r GYRE -n MY_GYRE 
+./makenemo -v 3 –m DEBIAN –r GYRE -n MY_GYRE
 # to run
 cd MY_GYRE/EXP00; mpirun ./opa
 # at the end of the run, output files are available in the current directory
@@ -115,6 +123,3 @@ where XXX is the number of processes to launch - see also [3] (Section 5).
 - Customizing NEMO:
 Custom and/or modified source files should be placed under the "MY_SRC" subdirectory of the chosen configuration.
 E.g. following step 5 above: /SRC/NEMOGCM/CONFIG/MY_GYRE/MY_SRC
-
-
-
