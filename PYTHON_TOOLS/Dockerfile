@@ -1,10 +1,10 @@
-### Installs the framework for the NEMO Ocean Engine compilation ###
-####################################################################
+### Installs the framework for running PARCELS and Python Diagnostics ##
+########################################################################
 FROM continuumio/miniconda3
 MAINTAINER Jeff Polton, jelt@noc.ac.uk
 
 RUN conda install --yes \
-	-c conda-forge python=3 parcels jupyter cartopy ffmpeg netcdf4=1.4.1
+	-c conda-forge python=3 parcels jupyter cartopy ffmpeg netcdf4=1.4.1 cmocean dask xarray imageio
 
 ### dependencies for PARCELS:
 # livljobs6: module load anaconda/3-2018_12
@@ -16,6 +16,5 @@ RUN conda install --yes \
 ### first update then install the main packages
 #RUN apt-get update -y && \
 #    apt-get install -y --no-install-recommends ${PACKAGES} 
-
 
 #RUN  python3 -m pip install -r requirements.txt
