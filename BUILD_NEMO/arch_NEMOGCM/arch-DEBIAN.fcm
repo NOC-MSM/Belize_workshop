@@ -32,7 +32,7 @@
 #
 %NCDF_HOME           /usr
 %HDF5_HOME           /usr/lib/x86_64-linux-gnu/hdf5/openmpi
-%XIOS_HOME           /SRC/XIOS2
+%XIOS_HOME           /Belize_workshop/BUILD_NEMO/XIOS2
 
 %NCDF_INC            -I%NCDF_HOME/include -I%HDF5_HOME/include
 %NCDF_LIB            -L%HDF5_HOME/lib -L%NCDF_HOME/lib -lnetcdff -lnetcdf -lhdf5_hl -lhdf5 -lz
