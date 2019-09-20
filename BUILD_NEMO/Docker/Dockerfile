@@ -14,7 +14,7 @@ MAINTAINER Pierre Derian, contact@pierrederian.net, www.pierrederian.net
 ENV PACKAGES="subversion make gcc g++ ssh" \
     PACKAGES_NEMO="perl gfortran libnetcdf-dev libnetcdff5" \
     PACKAGES_XIOS="liburi-perl libopenmpi-dev openmpi-bin libhdf5-openmpi-dev" \
-    PACKAGES_USER="nano python3.7"
+    PACKAGES_USER="nano python3"
 
 ### first update then install the main packages
 RUN apt-get update -y && \
