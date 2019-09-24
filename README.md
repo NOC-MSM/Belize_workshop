@@ -1,6 +1,6 @@
 # Belize workshop: NEMO regional model
 
-![Bathymetry for SANH domain](https://github.com/NOC-MSM/SANH/wiki/FIGURES/SANH_bathy.png)
+![Salinity snapshot for the Belize domain](https://github.com/NOC-MSM/SANH/wiki/FIGURES/snapshot.png)
 
 Getting started
 ===============
