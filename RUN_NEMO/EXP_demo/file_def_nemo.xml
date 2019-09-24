@@ -86,12 +86,11 @@
       <file_group id="1d" output_freq="1d"  output_level="10" enabled=".TRUE.">  <!-- 5d files -->   
 
         <file id="file22" name_suffix="_grid_T" description="ocean T grid variables" >
+          <field field_ref="sst"  long_name="sea surface temperature"   name="sea_surface_temperature"             unit="degC"     />
+          <field field_ref="sss"  long_name="sea surface salinity"      name="sea_surface_salinity"   unit="1e-3" />
           <field field_ref="ssh"          name="zos"      long_name="sea_surface_height_above_geoid"      />
-          <field field_ref="toce"         name="thetao"   long_name="sea_water_potential_temperature"     />
-          <field field_ref="soce"         name="soce"     long_name="salinity"                             />
-          <field field_ref="qt"           name="tohfls"   long_name="surface_net_downward_total_heat_flux"   />
-          <field field_ref="mldr10_1"     name="mldr10_1" long_name="Mixed Layer Depth (dsigma = 0.01 wrt 10m)"    />
-        </file>
+	</file>
+
 <!--
         <file id="file23" name_suffix="_grid_U" description="ocean U grid variables" >
           <field field_ref="vozocrtx25h"         name="uoce25h"    long_name="sea_water_x_velocity" />
@@ -102,20 +101,12 @@
 -->
 
         <file id="file23" name_suffix="_grid_U" description="ocean U grid variables" >
-          <field field_ref="uoce"         name="uoce"    long_name="sea_water_x_velocity" />
-          <field field_ref="ubar"         name="ubar"    long_name="barotropic_x_velocity" />
-          <field field_ref="utau"         name="utau"    long_name="Wind Stress along i-axis" />
+          <field field_ref="ssu"  name="uos"     long_name="sea_surface_x_velocity"    unit="m/s" />
         </file>
         <file id="file24" name_suffix="_grid_V" description="ocean V grid variables" >
-          <field field_ref="voce"         name="voce"    long_name="sea_water_y_velocity" />
-          <field field_ref="vbar"         name="vbar"    long_name="barotropic_y_velocity" />
-          <field field_ref="vtau"         name="vtau"    long_name="Wind Stress along j-axis" />
+	  <field field_ref="ssv"  name="vos"     long_name="sea_surface_y_velocity"    unit="m/s" />
         </file>
 
-        <file id="file25" name_suffix="_grid_W" description="ocean W grid variables" >
-          <field field_ref="woce"   name="woce"      long_name="ocean vertical velocity"   />
-          <field field_ref="avt"    name="avt"      long_name="vertical eddy diffusivity" />
-        </file>
       </file_group>
 
 

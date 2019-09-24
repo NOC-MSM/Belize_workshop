@@ -612,9 +612,9 @@ def convert_modelvarname_to_stdvarname(var_name):
         return 'ssu'
     elif 'vos' in var_name or 'vo' in var_name or 'vbar' in var_name:
         return 'ssv'
-    elif ('surface' in var_name) and ('temperature' in var_name) or ('tos' in var_name) or ('sst' in var_name):
+    elif ('surface' in var_name) and ('temperature' in var_name) or ('tos' in var_name) or ('sst' in var_name) or ('toce' in var_name):
         return 'sst'
-    elif ('surface' in var_name) and ('salinity' in var_name) or ('sss' in var_name):
+    elif ('surface' in var_name) and ('salinity' in var_name) or ('sss' in var_name) or ('sss' in var_name) or ('soce' in var_name):
         return 'sss'
     elif 'lat' in var_name:
         return 'lat'

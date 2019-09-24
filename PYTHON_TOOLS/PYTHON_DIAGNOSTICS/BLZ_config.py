@@ -96,7 +96,7 @@ The dictionaries store information as follows:
  dic = {filename1 : [f1var1, f1var2], filename2 : [f2var1, f2var2] }
 """
 
-dirname = '/PARCELS_DEMO/'
+dirname = '/Belize_workshop/RUN_NEMO/EXP_demo/' 
 # sshfs jelt@login.archer.ac.uk:/work/n01/n01/jelt /Users/jeff/MNTPOINT/
 #dirname = '/Users/jeff/MNTPOINT/SEAsia/EXP_eORCAR12/'
 #dirname = '/work/jelt/mount_points/archer/SEAsia/EXP_eORCAR12/'
@@ -104,25 +104,25 @@ grid_data = {} # For storing variables to lead the entire grid
 input_data = {} # For storing variables that are subsetted.
 
 ## GRID VARIABLES
-filename = 'SEAsia_1d_19661225_19661231_grid_T.nc'
+filename = 'BLZE12_C1_1d_19950101_19950101_grid_T.nc' 
 #filename = 'SEAsia_1d_196?????_1961????_grid_T.nc'
 variable_lst = ['nav_lat', 'nav_lon', 'time_counter'] # variables in the files
 grid_data.update( {dirname+filename: variable_lst} )
 
 ## SUBSETTED VARIABLES
-filename = 'SEAsia_1d_19661225_19661231_grid_U.nc'
+filename = 'BLZE12_C1_1d_19950101_19950101_grid_U.nc' 
 variable_lst = ['uos', 'nav_lat', 'nav_lon', 'time_counter'] # variables in the files
 #filename = 'SEAsia_1d_196?????_1961????_grid_U.nc'
 #variable_lst = ['ubar', 'nav_lat', 'nav_lon', 'time_counter'] # variables in the files
 input_data.update( {dirname+filename: variable_lst} )
 
-filename = 'SEAsia_1d_19661225_19661231_grid_V.nc'
+filename = 'BLZE12_C1_1d_19950101_19950101_grid_V.nc' 
 variable_lst = ['vos', 'nav_lat', 'nav_lon'] # variables in the files
 #filename = 'SEAsia_1d_196?????_1961????_grid_V.nc'
 #variable_lst = ['vbar', 'nav_lat', 'nav_lon'] # variables in the files
 input_data.update( {dirname+filename: variable_lst} )
 
-filename = 'SEAsia_1d_19661225_19661231_grid_T.nc'
-#filename = 'SEAsia_1d_196?????_1961????_grid_T.nc'
+filename = 'BLZE12_C1_1d_19950101_19950101_grid_T.nc' 
 variable_lst = ['sea_surface_temperature', 'sea_surface_salinity', 'nav_lat', 'nav_lon'] # variables in the files
+#variable_lst = ['soce','toce', 'nav_lat', 'nav_lon'] # variables in the files
 input_data.update( {dirname+filename: variable_lst} )
