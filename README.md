@@ -1,6 +1,6 @@
 # Belize workshop: NEMO regional model
 
-![Salinity snapshot for the Belize domain](https://github.com/NOC-MSM/SANH/wiki/FIGURES/snapshot.png)
+![Salinity snapshot for the Belize domain](https://github.com/NOC-MSM/SANH/wiki/FIGURES/screenshot.png)
 
 Getting started
 ===============
