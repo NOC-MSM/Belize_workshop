@@ -653,7 +653,7 @@ def make_gif(files,output,delay=100, repeat=True,**kwargs):
     for filename in files:
         images.append(imageio.imread(filename))
     output_file = 'Gif-%s.gif' % datetime.datetime.now().strftime('%Y-%M-%d-%H-%M-%S')
-    imageio.mimsave(output, images, duration=delay)
+    imageio.mimsave(output, images, fps=10)
 
 def findJI(lat, lon, lat_grid, lon_grid):
      """
