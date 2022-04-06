@@ -1,4 +1,4 @@
-# Belize workshop: NEMO regional model
+# Belize workshop: Introduction to regional ocean modelling
 
 ![Salinity snapshot for the Belize domain](https://github.com/NOC-MSM/Belize_workshop/wiki/FIGURES/screenshot.png)
 
