@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6417227.svg)](https://zenodo.org/record/6417227)
+
 # Belize workshop: Introduction to regional ocean modelling
 
 ![Salinity snapshot for the Belize domain](https://github.com/NOC-MSM/Belize_workshop/wiki/FIGURES/screenshot.png)
